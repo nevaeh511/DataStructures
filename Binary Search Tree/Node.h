@@ -2,7 +2,6 @@
 // Course: CS 2420 section: 001
 
 #include<cstdlib>
-#include<algorithm>
 using namespace std;
 
 struct node
@@ -13,14 +12,11 @@ struct node
 	node* left;
 	//pointer to the right child node
 	node* right;
-	int height;
 
-	node::node(int val)
+	node(int val)
 	{
 		data = val;
 		left = nullptr;
 		right = nullptr;
-		height = 1;
 	}
-
 };
